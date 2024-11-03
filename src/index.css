@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased bg-white dark:bg-black text-neutral-900 dark:text-neutral-100;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative py-2 text-neutral-600 dark:text-neutral-400 transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-[1px] bg-neutral-900 dark:bg-neutral-100 transition-all duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .section-heading {
+    @apply text-4xl md:text-5xl font-light tracking-tight mb-16;
+  }
+
+  .reveal-text {
+    @apply overflow-hidden relative;
+  }
+
+  .reveal-text span {
+    @apply block transform transition-transform duration-1000;
+  }
+}
+
+.magnetic-button {
+  transform: translate(var(--x, 0), var(--y, 0));
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+::selection {
+  @apply bg-neutral-900 text-white dark:bg-neutral-100 dark:text-black;
+}
+@layer base {
+  :root {
+    --primary: 0 0% 9%;
+  }
+}
