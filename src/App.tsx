@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Linkedin} from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 // import Skills from './components/Skills';
@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 import { About } from './components/About';
 import { Experience } from './components/Exp';
-
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,17 +23,27 @@ function App() {
           <Hero />
           <Projects />
           <About />
-          <Experience/>
+          <Experience />
           {/* <Skills /> */}
           <Contact />
         </main>
 
         <footer className="py-8 text-center border-t border-gray-200 dark:border-gray-800">
           <div className="flex justify-center space-x-6 mb-4">
-            <a href="https://github.com/SravanamCharan20" className="hover:text-blue-500 transition-colors">
+            <a 
+              href="https://github.com/SravanamCharan20" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-blue-500 transition-colors"
+            >
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/sravanam-charan-67773b2a7/" className="hover:text-blue-500 transition-colors">
+            <a 
+              href="https://www.linkedin.com/in/sravanam-charan-67773b2a7/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-blue-500 transition-colors"
+            >
               <Linkedin className="w-6 h-6" />
             </a>
           </div>

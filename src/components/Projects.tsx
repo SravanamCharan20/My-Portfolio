@@ -61,7 +61,7 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className="group border-t border-neutral-400 dark:border-neutral-600 py-12"
             >
-              <a className="block transition-opacity">
+              <a href={project.demo} target="_blank" rel="noopener noreferrer" className="block transition-opacity">
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="text-3xl font-light mb-4">{project.title}</h3>
@@ -81,6 +81,8 @@ const Projects = () => {
                 <div className="flex gap-4 mt-4">
                   <a 
                     href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
                     className="flex items-center gap-2 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg transition hover:bg-gray-300 dark:hover:bg-gray-700"
                   >
                     <Github className="w-4 h-4" />
@@ -88,6 +90,8 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.demo} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
                     className="flex items-center gap-2 bg-gray-800 dark:bg-gray-200 text-white dark:text-black px-4 py-2 rounded-lg transition hover:bg-black dark:hover:bg-gray-300"
                   >
                     <ExternalLink className="w-4 h-4" />
