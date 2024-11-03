@@ -34,25 +34,25 @@ const Contact = () => {
 
             <div className="space-y-6">
               <a
-                href="mailto:hello@example.com"
+                href="mailto:sravanamcharan20@gmail.com"
                 className="block group"
               >
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">Email</div>
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">hello@example.com</span>
+                  <span className="text-lg">sravanamcharan20@gmail.com</span>
                   <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </div>
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/sravanam-charan-67773b2a7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block group"
               >
                 <div className="text-sm text-neutral-600 dark:text-neutral-400 mb-1">LinkedIn</div>
                 <div className="flex items-center gap-2">
-                  <span className="text-lg">linkedin.com/in/yourname</span>
+                  <span className="text-lg">linkedin.com/in/Sravanamcharan</span>
                   <ArrowUpRight className="w-4 h-4 transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </div>
               </a>
@@ -60,6 +60,9 @@ const Contact = () => {
           </motion.div>
 
           <motion.form
+            action={`mailto:sravanamcharan20@gmail.com`}
+            method="post"
+            encType="text/plain"
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -70,7 +73,9 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors"
+                name="name"
+                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-600 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors"
+                required
               />
             </div>
 
@@ -79,7 +84,9 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors"
+                name="email"
+                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-600 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors"
+                required
               />
             </div>
 
@@ -87,8 +94,10 @@ const Contact = () => {
               <label htmlFor="message" className="block text-sm mb-2">Message</label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
-                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-800 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors resize-none"
+                className="w-full px-0 py-4 bg-transparent border-b border-neutral-200 dark:border-neutral-600 focus:border-neutral-900 dark:focus:border-neutral-100 outline-none transition-colors resize-none"
+                required
               />
             </div>
 

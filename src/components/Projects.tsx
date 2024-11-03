@@ -5,29 +5,33 @@ import { ArrowUpRight, ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Digital Experience Platform',
-    description: 'Enterprise-level content management system',
-    link: '#',
-    tags: ['React', 'Redux', 'Firebase'],
-    github: '#',
-    demo: '#',
+    title: 'Ecobites',
+    description: 'A platform connecting surplus food and non-food items from businesses and individuals to charities and those in need, reducing waste through a real-time marketplace.',
+    tags: ['React+Vite', 'Tailwind css', 'Node.js', 'Express', 'MongoDB', 'MVC Architecture', 'FramerMotion', 'Nodemon' , 'MapsAPI' , 'RESTAPIs'],
+    github: 'https://github.com/SravanamCharan20/EcoBites2',
+    demo: 'https://ecobites2.onrender.com',
   },
   {
-    title: 'AI-Powered Analytics',
-    description: 'Real-time data visualization platform',
-    link: '#',
-    tags: ['React', 'Tailwind CSS', 'Framer Motion'],
-    github: '#',
-    demo: '#',
+    title: 'Google Search - Clone',
+    description: 'Build a Google search clone with Next.js, Tailwind CSS, and Google Search Engine API for live search functionality.',
+    tags: ['Next.js', 'Tailwind CSS', 'Google Search Engine API'],
+    github: 'https://github.com/SravanamCharan20/GoogleClone',
+    demo: 'https://google-searchclone.vercel.app/',
   },
   {
-    title: 'E-Commerce Solution',
-    description: 'Modern headless commerce platform',
-    link: '#',
-    tags: ['React', 'D3.js', 'Weather API'],
-    github: '#',
-    demo: '#',
-  }
+    title: 'CineVerse',
+    description: 'CineVerse is an online database for movies, TV shows, and celebrities, offering ratings, reviews, and extensive information.',
+    tags: ['React', 'Node.js', 'Imdb API', 'Tailwind CSS'],
+    github: 'https://github.com/SravanamCharan20/imbd',
+    demo: 'https://imbd-chi.vercel.app/',
+  },
+  {
+    title: 'BrainWave - (UI/UX Design)',
+    description: 'Brainstorm is an eye-catching UI/UX designed platform that offers a sleek, responsive interface with dynamic data handling. Its innovative design ensures rapid development and efficient state management for a seamless user experience.',
+    tags: ['React', 'Vite', 'FramerMotion', 'Tailwind CSS'],
+    github: 'https://github.com/SravanamCharan20/BrainStrom',
+    demo: 'https://brain-strom-bay.vercel.app/',
+  },
 ];
 
 const Projects = () => {
@@ -55,9 +59,9 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="group border-t border-neutral-200 dark:border-neutral-800 py-12"
+              className="group border-t border-neutral-400 dark:border-neutral-600 py-12"
             >
-              <a href={project.link} className="block transition-opacity">
+              <a className="block transition-opacity">
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="text-3xl font-light mb-4">{project.title}</h3>

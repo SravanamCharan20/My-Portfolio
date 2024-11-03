@@ -5,22 +5,22 @@ const skills = [
   {
     icon: <Code2 className="w-6 h-6" />,
     title: 'Frontend Development',
-    items: ['React', 'TypeScript', 'Next.js', 'Redux', 'CSS/SCSS', 'Jest/RTL'],
+    items: ['React', 'TypeScript', 'Next.js', 'Redux','Vanilla JS', 'CSS', 'Tailwindcss'],
   },
   {
     icon: <Server className="w-6 h-6" />,
     title: 'Backend Development',
-    items: ['Node.js', 'Python', 'Java', 'Express', 'REST APIs', 'GraphQL'],
+    items: ['Node.js', 'Python', 'Express', 'REST APIs','MongoDB Server'],
   },
   {
     icon: <Database className="w-6 h-6" />,
     title: 'Data & Algorithms',
-    items: ['DSA', 'System Design', 'SQL', 'MongoDB', 'Redis', 'AWS'],
+    items: ['DSA', 'System Design', 'SQL', 'MongoDB', 'JWT (JSON Web Tokens)', 'AWS'],
   },
   {
     icon: <Globe className="w-6 h-6" />,
     title: 'Tools & Practices',
-    items: ['Git', 'CI/CD', 'Docker', 'Agile', 'TDD', 'Clean Code'],
+    items: ['Git', 'Postman', 'Docker','Latex'],
   },
 ];
 
@@ -45,7 +45,7 @@ export function About() {
               300+ LeetCode Problems
             </span>
             <span className="px-3 py-1 bg-slate-900/10 dark:bg-blue-600/10 text-black dark:text-gray-200 rounded-full text-sm">
-              System Design
+              Full Stack Web Developer
             </span>
             <span className="px-3 py-1 bg-slate-900/10 dark:bg-blue-600/10 text-black dark:text-gray-200 rounded-full text-sm">
               Open Source Contributor
