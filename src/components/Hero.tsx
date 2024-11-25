@@ -49,10 +49,14 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <motion.h1 
+        <motion.h1
           className="text-6xl md:text-8xl font-light mb-6 tracking-tight"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20, textShadow: 'none' }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)', // Shade effect at the end
+          }}
           transition={{ duration: 1, delay: 0.2 }}
         >
           Sravanam Charan
@@ -87,7 +91,7 @@ const Hero = () => {
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 2 }}
         >
-          <ArrowDown className="w-6 h-6 text-neutral-400" />
+          <ArrowDown className="w-6 h-6 text-neutral-800" />
         </motion.div>
         
       </div>

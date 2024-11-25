@@ -12,6 +12,13 @@ const projects = [
     demo: 'https://ecobites2.onrender.com',
   },
   {
+    title: 'CodeCast - Real-time Code Collaboration',
+    description: 'CodeCast is a real-time code collaboration app built with the MERN stack and Socket.IO. It allows multiple users to collaborate on code in the same virtual room.',
+    tags: ['Express.js', 'React', 'Node.js', 'Socket.IO', 'uuid', 'CodeMirror'],
+    github: 'https://github.com/SravanamCharan20/CodeCast',
+    demo: 'https://codecast-1-trw9.onrender.com/'
+  },
+  {
     title: 'Google Search - Clone',
     description: 'Build a Google search clone with Next.js, Tailwind CSS, and Google Search Engine API for live search functionality.',
     tags: ['Next.js', 'Tailwind CSS', 'Google Search Engine API'],
