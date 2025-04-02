@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, Briefcase, GitBranch } from 'lucide-react';
-import { Github, ExternalLink } from 'lucide-react'; // Ensure these icons are imported
+import { Github } from 'lucide-react'; // Ensure these icons are imported
 
 const experiences = [
   {
